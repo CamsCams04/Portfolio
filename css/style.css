@@ -9,6 +9,7 @@ html{
 body{
   margin: 0px;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .espaceMenu{
@@ -193,6 +194,7 @@ p{
 #projetDiv{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .custom-slider{
@@ -321,6 +323,31 @@ p{
   #profilImg {
     width: 150px;
   }
+  .divProjet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #technoDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  /* Réorganisation des onglets techniques pour les petits écrans */
+  .menu_techno {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de s'enrouler sur plusieurs lignes */
+    justify-content: center; /* Centre les éléments */
+    margin: 0 auto; /* Centrage horizontal */
+  }
+
+  .onglet_techno {
+    width: 45%; /* Largeur réduite pour s'adapter à l'écran */
+    margin: 5px; /* Espacement entre les onglets */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -339,6 +366,47 @@ p{
   .contenu {
     padding: 5px;
   }
+
+  #profilImg {
+    width: 25%;
+  }
+  button {
+    font-size: 2vw;
+    padding: 3% 6%;
+  }
+  /* Réorganisation des onglets pour les petits écrans */
+  .menu_a {
+    width: 25%;
+  }
+
+  /* Utilisation de flexbox pour organiser les éléments en colonnes sur les petits écrans */
+  .contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #pdf {
+    width: 90%;
+    height: auto;
+  }
+
+  canvas {
+    height: 20vh;
+    width: 80%;
+  }
+
+  /* Réduction de la taille du logo */
+  #logo {
+    width: 15%;
+  }
+
+  /* Réduction de la taille des images de diapositives */
+  .slide-img {
+    height: 150px;
+  }
+
 }
 
 
