@@ -29,7 +29,9 @@ const text = ["Three.js est une bibliothèque JavaScript open source qui permet 
                         "Python est un langage de programmation connu pour sa simplicité syntaxique et sa lisibilité. Il est largement utilisé dans le développement web, " +
                         "l'analyse de données, l'intelligence artificielle, l'apprentissage automatique, l'automatisation des tâches et bien d'autres domaines. Python favorise la productivité des développeurs " +
                         "grâce à sa syntaxe concise et à ses nombreuses bibliothèques et frameworks. Il est apprécié pour sa facilité d'apprentissage, sa flexibilité, sa polyvalence et sa grande communauté de développeurs. " +
-                        "Python est souvent utilisé pour prototyper rapidement des projets et développer des applications efficaces et évolutives."]
+                        "Python est souvent utilisé pour prototyper rapidement des projets et développer des applications efficaces et évolutives.",
+                        "Rust est un langage de programmation compilé développé par Mozilla. Conçu pour garantir la sécurité de la mémoire, offrir des performances élevées et gérer efficacement la concurrence, il utilise un" +
+                        "système de vérification lors de la compilation. Rust est également soutenu par des outils robustes comme Cargo pour la gestion des paquets."]
 
 let linkMTL = "./assets/logo/threejs.mtl";
 let linkOBJ = "./assets/logo/threejs.obj";
@@ -88,6 +90,12 @@ switch (indSelect){
         linkOBJ = "./assets/logo/python.obj";
         description = text[7];
         sizeCamera = 6;
+        break;
+    case 8:
+        linkMTL = "./assets/logo/rust.mtl";
+        linkOBJ = "./assets/logo/rust.obj";
+        description = text[8];
+        sizeCamera = 7;
         break;
     default :
         console.log("cette techno n'hexiste pas");
@@ -151,6 +159,12 @@ ongletsTechno.forEach(onglet =>{
                 linkOBJ = "./assets/logo/python.obj";
                 description = text[7];
                 sizeCamera = 6;
+                break;
+            case 8:
+                linkMTL = "./assets/logo/rust.mtl";
+                linkOBJ = "./assets/logo/rust.obj";
+                description = text[8];
+                sizeCamera = 7;
                 break;
             default :
                 console.log("Cette techno n'existe pas");
